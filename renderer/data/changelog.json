@@ -1,6 +1,13 @@
 [
   {
-    "version": "1.1",
+    "version": "1.1.1",
+    "log": [
+      "Fixed target directory not saving correctly",
+      "Version in title is now set by newest version in changelog file"
+    ]
+  },
+  {
+    "version": "1.1.0",
     "log": [
       "Removed \"paks\" folder auto-creation",
       "Added guide",
@@ -8,7 +15,7 @@
     ]
   },
   {
-    "version": "1.0",
+    "version": "1.0.0",
     "log": [
       "Overhauled user interface",
       "Added option to select output directory",
@@ -16,7 +23,7 @@
     ]
   },
   {
-    "version": "0.1",
+    "version": "0.1.0",
     "log": [
       "First release"
     ]
