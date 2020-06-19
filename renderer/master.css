@@ -1,0 +1,118 @@
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+html, body{
+  padding: 0;
+  margin: 0;
+  font-family: "Arial";
+}
+
+header{
+  background-color: #333;
+  color: #f8f8f8;
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 12px;
+  line-height: 30px;
+  height: 30px;
+  padding-left: 20px;
+  overflow: hidden;
+}
+
+header::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4px;
+  -webkit-app-region: no-drag;
+}
+
+header > div{
+  display: inline-block;
+}
+
+header > div > span{
+  font-weight: bold;
+}
+
+header .nav-btns{
+  float: right;
+  -webkit-app-region: no-drag;
+}
+
+header .nav-btns .nav-btn{
+  display: inline-block;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+header .nav-btns .nav-btn i{
+  font-size: 16px;
+  line-height: 30px;
+}
+
+header .nav-btns .nav-btn:hover{
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+main{
+  margin: 20px;
+  overflow: auto;
+  text-align: center;
+}
+
+input{
+  width: calc(100% - 24px);
+  padding: 10px;
+}
+
+.button{
+  display: inline-block;
+  padding: 0 10px;
+  background-color: #777;
+  border: none;
+  cursor: pointer;
+  color: #f8f8f8;
+  height: 39px;
+  line-height: 39px;
+  user-select: none;
+}
+
+.button i{
+  vertical-align: middle;
+}
+
+.button:hover{
+  background-color: #aaa;
+}
+
+.log{
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.log > div:nth-child(1){
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+  text-align: left;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 20px;
+  bottom: 70px;
+  overflow: auto;
+}
+
+.log .button{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}

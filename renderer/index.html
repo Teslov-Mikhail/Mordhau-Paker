@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MORDHAU - Mod PAKer 0.3</title>
+    <link rel="stylesheet" href="master.css">
+  </head>
+  <body>
+    <header>
+      <div>Teslov's <span>MORDHAU</span> Mod PAKer - <i>1.1</i></div>
+      <div class="nav-btns">
+        <div class="nav-btn"><i class="material-icons">subject</i></div>
+        <div class="nav-btn"><i class="material-icons">help_outline</i></div>
+        <div class="nav-btn"><i class="material-icons">minimize</i></div>
+        <div class="nav-btn"><i class="material-icons">fullscreen</i></div>
+        <div class="nav-btn"><i class="material-icons">close</i></div>
+      </div>
+    </header>
+
+    <main>
+
+      <teslov-input label="PAK filename" name="filename"></teslov-input>
+
+      <br>
+
+      <teslov-input label="Directory to PAK" name="dir" value="" readonly="true" btn="folder"></teslov-input>
+
+      <br>
+
+      <teslov-input label="MORDHAU PAK structure" name="structure" btn="clear"></teslov-input>
+
+      <br>
+
+      <teslov-input label="Target directory" name="target" readonly btn="folder"></teslov-input>
+
+      <br>
+
+      <div>
+        <div class="button" name="pak" style="float: right;">
+          PAK my modpack
+          <i class="material-icons">archive</i>
+        </div>
+      </div>
+
+      <div class="log">
+        <div>
+
+        </div>
+        <div class="button" name="closelog" style="float: right;">
+          Close
+          <i class="material-icons">clear</i>
+        </div>
+      </div>
+
+    </main>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
