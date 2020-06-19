@@ -43,7 +43,7 @@ class DataManager {
   set target(val) {
     this._target = val;
     inputs.targetPreview.value = val;
-    localStorage.setItem('dir', val);
+    localStorage.setItem('target', val);
   }
 }
 
