@@ -12,6 +12,8 @@ const DataManager = require("./js/DataManager.js");
 let topNav = document.querySelectorAll('.nav-btns .nav-btn');
 let thisWindow = remote.getCurrentWindow();
 
+document.querySelector("#title").innerHTML = document.querySelector("#title").innerHTML.replace("{{currentVersion}}", changelog[0].version);
+
 topNav[0].onclick = function(e) {
   inputs.log.innerHTML = "";
   for (let version of changelog) {
